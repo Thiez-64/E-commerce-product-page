@@ -1,0 +1,123 @@
+@use '../colors' as colors;
+
+.wrapper {
+  font-family: 'Kumbh Sans', sans-serif;
+  padding: 1.6rem 1.2rem;
+}
+
+.content {
+  display: flex;
+  flex-direction: column;
+  gap: 1.2rem;
+
+  .company {
+    color: colors.$orange;
+    font-size: 0.7rem;
+    font-weight: 700;
+  }
+
+  .product {
+    color: colors.$black;
+    font-weight: 700;
+    font-size: 1.6rem;
+  }
+
+  .description {
+    color: colors.$dark-grayish-blue;
+    font-size: 0.8rem;
+    line-height: 1.2rem;
+  }
+
+  .prices {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+
+    .price {
+      display: flex;
+      flex-direction: row;
+      align-items: center;
+      gap: 1rem;
+
+      .finalPrice {
+        color: colors.$black;
+        font-weight: 700;
+        font-size: 1.6rem;
+      }
+
+      .reduction {
+        color: colors.$orange;
+        background-color: colors.$pale-orange;
+        font-size: 0.8rem;
+        font-weight: 700;
+        padding: 0.4rem;
+        border-radius: 4px;
+      }
+    }
+
+    .originalPrice {
+      color: colors.$dark-grayish-blue;
+      text-decoration: line-through;
+      font-weight: 700;
+      font-size: 1rem;
+    }
+  }
+
+  .selector {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    background-color: colors.$light-grayish-blue;
+    border-radius: 4px;
+    padding: 1rem 0.6rem;
+
+    button {
+      appearance: none;
+      border: unset;
+      background-color: transparent;
+      display: flex;
+      flex-direction: row;
+      align-items: center;
+      justify-content: center;
+      padding: 0;
+
+      .select {
+        color: colors.$orange;
+        scale: 0.6;
+        path {
+          stroke-width: 0;
+        }
+      }
+    }
+
+    .indicator {
+      color: colors.$black;
+      font-weight: 700;
+      font-size: 1rem;
+    }
+  }
+
+  .add {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    gap: 1rem;
+    background-color: colors.$orange;
+    border: unset;
+    border-radius: 4px;
+    padding: 1.8rem;
+    .title {
+      color: colors.$white;
+      font-weight: 700;
+      font-size: 1.2rem;
+      line-height: 1rem;
+    }
+    .cart {
+      color: colors.$white;
+      scale: 0.6;
+    }
+  }
+}

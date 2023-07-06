@@ -1,0 +1,53 @@
+@use '../colors.scss' as colors;
+
+.wrapper {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  .image {
+    width: 100%;
+    height: 180px;
+    object-fit: cover;
+  }
+  .controls {
+    position: absolute;
+    left: 50%;
+    translate: -50% -50%;
+    width: calc(100% - 2rem);
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin: 0 auto;
+
+    button {
+      appearance: none;
+      border: unset;
+      padding: 0;
+      background-color: colors.$white;
+      width: 25px;
+      height: 25px;
+      border-radius: 100%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+
+    .control {
+      scale: 0.5;
+      path {
+        fill: none;
+        stroke-width: 4;
+      }
+    }
+    .previous {
+      path {
+        translate: -8%;
+      }
+    }
+    .next {
+      path {
+        translate: 8%;
+      }
+    }
+  }
+}

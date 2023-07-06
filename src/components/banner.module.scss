@@ -1,0 +1,93 @@
+@use '../colors.scss' as colors;
+
+.wrapper {
+  width: calc(100% - 2rem);
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  padding-block: 1rem;
+  margin: 0 auto;
+
+  .burger {
+    display: flex;
+    flex-direction: row;
+    align-items: flex-end;
+    gap: 1rem;
+
+    .menu {
+      color: colors.$dark-grayish-blue;
+      width: 12px;
+      height: 12px;
+      path {
+        scale: 0.7;
+      }
+      &:hover {
+        color: colors.$black;
+        cursor: pointer;
+      }
+    }
+    .logo {
+      height: 17px;
+      width: fit-content;
+      path {
+        scale: 0.8;
+      }
+    }
+  }
+
+  .action {
+    display: flex;
+    flex-direction: row;
+    align-items: flex-end;
+    gap: 1rem;
+
+    .cartItems {
+      position: relative;
+
+      .cart {
+        height: 12px;
+        width: 15px;
+        color: colors.$dark-grayish-blue;
+        path {
+          scale: 0.6;
+        }
+        &:hover {
+          color: colors.$black;
+          cursor: pointer;
+        }
+      }
+      .bubble {
+        position: absolute;
+        top: -4px;
+        right: -2px;
+        background-color: colors.$orange;
+        width: 12px;
+        height: 8px;
+        border-radius: 4px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        .counter {
+          font-family: 'Kumbh Sans', sans-serif;
+          font-size: 6px;
+          font-weight: 700;
+          text-align: center;
+          color: colors.$white;
+        }
+      }
+    }
+    .avatar {
+      width: 17px;
+      height: 17px;
+    }
+  }
+}
+
+button {
+  appearance: none;
+  border: unset;
+  background-color: transparent;
+  padding: 0;
+  height: 12px;
+}

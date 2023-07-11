@@ -2,14 +2,11 @@ import { useState } from 'react';
 import styles from './carousel.module.scss';
 import { HiChevronLeft, HiChevronRight } from 'react-icons/hi';
 
-const images = [
-  'image-product-1.jpg',
-  'image-product-2.jpg',
-  'image-product-3.jpg',
-  'image-product-4.jpg',
-];
+type CarouselProps = {
+  images: string[];
+};
 
-export const Carousel = () => {
+export const Carousel = ({ images }: CarouselProps) => {
   const [currentIndex, setCurrentIndex] = useState(0);
 
   const nextImage = () => {

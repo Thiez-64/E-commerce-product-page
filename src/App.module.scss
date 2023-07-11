@@ -1,1 +1,23 @@
+.section {
+  @media (min-width: 1024px) {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    gap: 12rem;
+    padding-block: 6rem;
+    margin: 0 auto;
+    width: 1240px;
+  }
+}
 
+.carousel {
+  @media (min-width: 1024px) {
+    display: none;
+  }
+}
+.carouselDesktop {
+  display: none;
+  @media (min-width: 1024px) {
+    display: block;
+  }
+}

@@ -23,21 +23,24 @@ export const Product = () => {
           </div>
           <div className={styles.originalPrice}>$250.00</div>
         </div>
-        <div className={styles.selector}>
-          <button
-            onClick={() => setIndicator(indicator !== 0 ? indicator - 1 : 0)}
-          >
-            <HiMinusSm className={styles.select} size={35} />
-          </button>
-          <div className={styles.indicator}>{indicator}</div>
-          <button onClick={() => setIndicator(indicator + 1)}>
-            <HiPlusSm className={styles.select} size={35} />
+
+        <div className={styles.actions}>
+          <div className={styles.selector}>
+            <button
+              onClick={() => setIndicator(indicator !== 0 ? indicator - 1 : 0)}
+            >
+              <HiMinusSm className={styles.select} size={35} />
+            </button>
+            <div className={styles.indicator}>{indicator}</div>
+            <button onClick={() => setIndicator(indicator + 1)}>
+              <HiPlusSm className={styles.select} size={35} />
+            </button>
+          </div>
+          <button className={styles.add} onClick={() => setCounter(indicator)}>
+            <HiOutlineShoppingCart className={styles.cart} size={20} />
+            <div className={styles.title}>Add to cart</div>
           </button>
         </div>
-        <button className={styles.add} onClick={() => setCounter(indicator)}>
-          <HiOutlineShoppingCart className={styles.cart} size={20} />
-          <div className={styles.title}>Add to cart</div>
-        </button>
       </div>
     </div>
   );

@@ -9,12 +9,19 @@
   padding-top: 2rem;
   padding-bottom: 2.5rem;
   margin: 0 auto;
+  @media (min-width: 1024px) {
+    max-width: 1240px;
+  }
 
   .burger {
     display: flex;
     flex-direction: row;
     align-items: center;
     gap: 1rem;
+
+    @media (min-width: 1024px) {
+      display: none;
+    }
 
     .menu {
       color: colors.$dark-grayish-blue;
@@ -31,6 +38,32 @@
       line-height: 3rem;
       top: -5px;
       position: relative;
+    }
+  }
+
+  ul {
+    display: none;
+
+    @media (min-width: 1024px) {
+      display: flex;
+      align-items: center;
+      gap: 3rem;
+    }
+
+    .logo {
+      font-size: 4rem;
+      font-family: 'Kumbh Sans', sans-serif;
+      font-weight: 700;
+      line-height: 4rem;
+      margin-right: 2rem;
+    }
+
+    li {
+      font-size: 2rem;
+      font-family: 'Kumbh Sans', sans-serif;
+      font-weight: 700;
+      line-height: 1.8rem;
+      color: colors.$dark-grayish-blue;
     }
   }
 
@@ -76,7 +109,7 @@
       &:hover {
         width: 35px;
         height: 35px;
-        border: solid 2.5px colors.$dark-grayish-blue;
+        border: solid 2.5px colors.$orange;
         border-radius: 100%;
         scale: 1.1;
       }

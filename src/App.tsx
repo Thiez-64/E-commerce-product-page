@@ -7,6 +7,15 @@ import { createPortal } from 'react-dom';
 import { MenuModal } from './components/MenuModal';
 import { CartModal } from './components/CartModal';
 import { Accordion } from './components/Accordion';
+import { CarouselDesktop } from './components/CarouselDesktop';
+import styles from './app.module.scss';
+
+const images = [
+  'image-product-1.jpg',
+  'image-product-2.jpg',
+  'image-product-3.jpg',
+  'image-product-4.jpg',
+];
 
 const App = () => {
   const { isMenu, isCart } = useContext(GlobalContext);
@@ -16,8 +25,13 @@ const App = () => {
       <header>
         <Banner />
       </header>
-      <section>
-        <Carousel />
+      <section className={styles.section}>
+        <div className={styles.carousel}>
+          <Carousel images={images} />
+        </div>
+        <div className={styles.carouselDesktop}>
+          <CarouselDesktop images={images} />
+        </div>
         <Product />
         {/* <Accordion /> */}
       </section>

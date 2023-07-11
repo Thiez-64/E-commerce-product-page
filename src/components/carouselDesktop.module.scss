@@ -1,0 +1,32 @@
+.wrapper {
+  display: flex;
+  flex-direction: column;
+  gap: 3rem;
+
+  .mainImage {
+    img {
+      border-radius: 8px;
+      width: 500px;
+      height: 500px;
+    }
+  }
+
+  .images {
+    display: flex;
+    flex-direction: row;
+    gap: 3rem;
+
+    .button {
+      appearance: none;
+      border: unset;
+      background-color: transparent;
+      padding: 0;
+      height: 100px;
+      img {
+        width: 100px;
+        height: 100px;
+        border-radius: 8px;
+      }
+    }
+  }
+}

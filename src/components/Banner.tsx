@@ -1,7 +1,7 @@
 import { useContext } from 'react';
-import { IconCart, IconLogo, IconMenu } from '../icons';
 import styles from './banner.module.scss';
 import GlobalContext from '../context/GlobalContext';
+import { HiMenu, HiOutlineShoppingCart } from 'react-icons/hi';
 
 export const Banner = () => {
   const { counter, setIsMenu, isCart, setIsCart } = useContext(GlobalContext);
@@ -10,14 +10,14 @@ export const Banner = () => {
     <div className={styles.wrapper}>
       <div className={styles.burger}>
         <button onClick={() => setIsMenu(true)}>
-          <IconMenu className={styles.menu} />
+          <HiMenu className={styles.menu} size={35} />
         </button>
-        <IconLogo className={styles.logo} />
+        <div className={styles.logo}>sneakers</div>
       </div>
       <div className={styles.action}>
         <div className={styles.cartItems}>
           <button onClick={() => setIsCart(!isCart)}>
-            <IconCart className={styles.cart} />
+            <HiOutlineShoppingCart className={styles.cart} size={35} />
           </button>
           {counter > 0 && (
             <div className={styles.bubble}>

@@ -2,30 +2,31 @@
 
 .wrapper {
   font-family: 'Kumbh Sans', sans-serif;
-  padding: 1.6rem 1.2rem;
+  padding: 2rem;
 }
 
 .content {
   display: flex;
   flex-direction: column;
-  gap: 1.2rem;
+  gap: 1.6rem;
 
   .company {
     color: colors.$orange;
-    font-size: 0.7rem;
+    font-size: 1.2rem;
     font-weight: 700;
   }
 
   .product {
     color: colors.$black;
     font-weight: 700;
-    font-size: 1.6rem;
+    font-size: 2.8rem;
   }
 
   .description {
     color: colors.$dark-grayish-blue;
-    font-size: 0.8rem;
-    line-height: 1.2rem;
+    font-size: 1.6rem;
+    line-height: 2.4rem;
+    margin-bottom: 1rem;
   }
 
   .prices {
@@ -43,13 +44,13 @@
       .finalPrice {
         color: colors.$black;
         font-weight: 700;
-        font-size: 1.6rem;
+        font-size: 2.8rem;
       }
 
       .reduction {
         color: colors.$orange;
         background-color: colors.$pale-orange;
-        font-size: 0.8rem;
+        font-size: 1.8rem;
         font-weight: 700;
         padding: 0.4rem;
         border-radius: 4px;
@@ -60,7 +61,7 @@
       color: colors.$dark-grayish-blue;
       text-decoration: line-through;
       font-weight: 700;
-      font-size: 1rem;
+      font-size: 1.8rem;
     }
   }
 
@@ -85,17 +86,13 @@
 
       .select {
         color: colors.$orange;
-        scale: 0.6;
-        path {
-          stroke-width: 0;
-        }
       }
     }
 
     .indicator {
       color: colors.$black;
       font-weight: 700;
-      font-size: 1rem;
+      font-size: 1.6rem;
     }
   }
 
@@ -108,16 +105,15 @@
     background-color: colors.$orange;
     border: unset;
     border-radius: 4px;
-    padding: 1.8rem;
+    padding: 2.8rem;
     .title {
       color: colors.$white;
       font-weight: 700;
-      font-size: 1.2rem;
-      line-height: 1rem;
+      font-size: 1.6rem;
+      line-height: 1.6rem;
     }
     .cart {
       color: colors.$white;
-      scale: 0.6;
     }
   }
 }

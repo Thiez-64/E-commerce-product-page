@@ -1,6 +1,6 @@
 import { useState } from 'react';
-import { IconNext, IconPrevious } from '../icons';
 import styles from './carousel.module.scss';
+import { HiChevronLeft, HiChevronRight } from 'react-icons/hi';
 
 const images = [
   'image-product-1.jpg',
@@ -30,11 +30,11 @@ export const Carousel = () => {
         className={styles.image}
       />
       <div className={styles.controls}>
-        <button onClick={previousImage}>
-          <IconPrevious className={`${styles.control} ${styles.previous}`} />
+        <button onClick={previousImage} className={styles.previous}>
+          <HiChevronLeft size={35} />
         </button>
-        <button onClick={nextImage}>
-          <IconNext className={`${styles.control} ${styles.next}`} />
+        <button onClick={nextImage} className={styles.next}>
+          <HiChevronRight size={35} />
         </button>
       </div>
     </div>

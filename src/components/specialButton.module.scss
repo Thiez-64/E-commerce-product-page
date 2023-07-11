@@ -1,0 +1,70 @@
+@use '../colors' as colors;
+
+button {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 2rem;
+  appearance: none;
+  border: unset;
+  background-color: transparent;
+  position: relative;
+
+  .arrow {
+    position: absolute;
+    background-color: colors.$black;
+    border-radius: 20px;
+    width: 40px;
+    height: 40px;
+    transition: 0.3s width ease-in;
+
+    .head {
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      display: block;
+      border-top: 2px solid colors.$white;
+      border-right: 2px solid colors.$white;
+      width: 10px;
+      height: 10px;
+      transform: translate(-50%, -50%) rotateZ(45deg);
+    }
+    .body {
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      display: block;
+      width: 15px;
+      height: 2px;
+      border-top: 2px solid colors.$white;
+      transform: translate(-50%, -50%);
+      opacity: 0;
+    }
+  }
+  .content {
+    margin-left: 45px;
+    font-weight: 700;
+  }
+
+  &:hover {
+    .arrow {
+      width: 155px;
+      padding-left: 15px;
+    }
+
+    .head {
+      transform: translate(-50%, -50%) rotateZ(45deg);
+      left: 20%;
+    }
+
+    .body {
+      opacity: 1;
+      left: 18%;
+    }
+
+    .content {
+      color: colors.$white;
+      z-index: 1;
+    }
+  }
+}

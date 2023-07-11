@@ -1,7 +1,7 @@
 import { useContext } from 'react';
 import GlobalContext from '../context/GlobalContext';
 import styles from './menuModal.module.scss';
-import { IconClose } from '../icons';
+import { HiX } from 'react-icons/hi';
 
 export const MenuModal = () => {
   const { setIsMenu } = useContext(GlobalContext);
@@ -9,7 +9,7 @@ export const MenuModal = () => {
     <>
       <div className={styles.wrapper}>
         <button onClick={() => setIsMenu(false)}>
-          <IconClose className={styles.close} />
+          <HiX className={styles.close} size={35} />
         </button>
         <ul>
           <li>Collections</li>

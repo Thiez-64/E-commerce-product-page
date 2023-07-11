@@ -5,12 +5,12 @@
   top: 0;
   left: 0;
   background-color: colors.$white;
-  width: 150px;
+  width: 200px;
   height: 100vh;
-  padding: 1.4rem;
+  padding: 1.8rem;
   display: flex;
   flex-direction: column;
-  gap: 3rem;
+  gap: 6rem;
   align-items: flex-start;
   z-index: 1;
 
@@ -21,12 +21,7 @@
     background-color: transparent;
 
     .close {
-      width: 12px;
-      height: 12px;
       color: colors.$dark-grayish-blue;
-      path {
-        scale: 0.6;
-      }
       &:hover {
         color: colors.$black;
       }
@@ -35,12 +30,12 @@
   ul {
     display: flex;
     flex-direction: column;
-    gap: 1rem;
+    gap: 2rem;
     li {
       font-family: 'Kumbh Sans', sans-serif;
       font-weight: 700;
       color: colors.$black;
-      font-size: 1.2rem;
+      font-size: 2.2rem;
     }
   }
 }

@@ -1,7 +1,7 @@
 import { useContext, useState } from 'react';
-import { IconCart, IconMinus, IconPlus } from '../icons';
 import styles from './product.module.scss';
 import GlobalContext from '../context/GlobalContext';
+import { HiMinusSm, HiPlusSm, HiOutlineShoppingCart } from 'react-icons/hi';
 
 export const Product = () => {
   const [indicator, setIndicator] = useState(0);
@@ -27,15 +27,15 @@ export const Product = () => {
           <button
             onClick={() => setIndicator(indicator !== 0 ? indicator - 1 : 0)}
           >
-            <IconMinus className={`${styles.select} ${styles.minus}`} />
+            <HiMinusSm className={styles.select} size={35} />
           </button>
           <div className={styles.indicator}>{indicator}</div>
           <button onClick={() => setIndicator(indicator + 1)}>
-            <IconPlus className={`${styles.select} ${styles.plus}`} />
+            <HiPlusSm className={styles.select} size={35} />
           </button>
         </div>
         <button className={styles.add} onClick={() => setCounter(indicator)}>
-          <IconCart className={styles.cart} />
+          <HiOutlineShoppingCart className={styles.cart} size={20} />
           <div className={styles.title}>Add to cart</div>
         </button>
       </div>

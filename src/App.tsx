@@ -6,6 +6,7 @@ import GlobalContext from './context/GlobalContext';
 import { createPortal } from 'react-dom';
 import { MenuModal } from './components/MenuModal';
 import { CartModal } from './components/CartModal';
+import { Accordion } from './components/Accordion';
 
 const App = () => {
   const { isMenu, isCart } = useContext(GlobalContext);
@@ -18,6 +19,7 @@ const App = () => {
       <section>
         <Carousel />
         <Product />
+        {/* <Accordion /> */}
       </section>
       {isMenu &&
         createPortal(

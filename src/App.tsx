@@ -6,7 +6,6 @@ import GlobalContext from './context/GlobalContext';
 import { createPortal } from 'react-dom';
 import { MenuModal } from './components/MenuModal';
 import { CartModal } from './components/CartModal';
-import { Accordion } from './components/Accordion';
 import { CarouselDesktop } from './components/CarouselDesktop';
 import styles from './app.module.scss';
 
@@ -33,7 +32,6 @@ const App = () => {
           <CarouselDesktop images={images} />
         </div>
         <Product />
-        {/* <Accordion /> */}
       </section>
       {isMenu &&
         createPortal(

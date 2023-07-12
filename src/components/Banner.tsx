@@ -36,7 +36,7 @@ export const Banner = () => {
           )}
         </div>
         <img
-          src="./public/images/image-avatar.png"
+          src="/images/image-avatar.png"
           alt="avatar"
           className={styles.avatar}
         />

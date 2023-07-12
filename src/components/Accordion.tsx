@@ -2,7 +2,7 @@ import styles from './accordion.module.scss';
 
 const tabs = [
   {
-    image: './public/images/image-product-1.jpg',
+    image: '/images/image-product-1.jpg',
     alt: 'image-product-1',
     indicator: '01',
     title: 'Chasing Gold',
@@ -10,7 +10,7 @@ const tabs = [
     brand: 'Reebok',
   },
   {
-    image: './public/images/image-product-2.jpg',
+    image: '/images/image-product-2.jpg',
     alt: 'image-product-2',
     indicator: '02',
     title: 'Be More Human',
@@ -18,7 +18,7 @@ const tabs = [
     brand: 'Nike',
   },
   {
-    image: './public/images/image-product-3.jpg',
+    image: '/images/image-product-3.jpg',
     alt: 'image-product-3',
     indicator: '03',
     title: 'Legacy Summit',
@@ -26,7 +26,7 @@ const tabs = [
     brand: 'McDonald',
   },
   {
-    image: './public/images/image-product-4.jpg',
+    image: '/images/image-product-4.jpg',
     alt: 'image-product-4',
     indicator: '04',
     title: 'Creative',

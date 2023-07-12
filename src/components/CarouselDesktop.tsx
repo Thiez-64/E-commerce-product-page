@@ -10,12 +10,12 @@ export const CarouselDesktop = ({ images }: CarouselDesktopProps) => {
     <div className={styles.wrapper}>
     <div className={styles.mainImage}>
 
-      <img src={`/public/images/${images[currentIndex]}`} alt="" />
+      <img src={`/images/${images[currentIndex]}`} alt="" />
     </div>
       <div className={styles.images}>
         {images.map((image, index) => (
           <button onClick={() => setCurrentIndex(index)} className={styles.button}>
-            <img src={`/public/images/${image}`} alt="" key={index} />
+            <img src={`/images/${image}`} alt="" key={index} />
           </button>
         ))}
       </div>

@@ -22,7 +22,7 @@ export const Carousel = ({ images }: CarouselProps) => {
   return (
     <div className={styles.wrapper}>
       <img
-        src={`/public/images/${images[currentIndex]}`}
+        src={`/images/${images[currentIndex]}`}
         alt="image-product-1"
         className={styles.image}
       />

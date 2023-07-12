@@ -15,7 +15,7 @@ export const CartModal = () => {
           <div className={styles.line}>
             <div className={styles.product}>
               <img
-                src="/public/images/image-product-1-thumbnail.jpg"
+                src="/images/image-product-1-thumbnail.jpg"
                 alt="image-product-1-thumbnail"
                 className={styles.image}
               />

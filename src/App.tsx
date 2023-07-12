@@ -7,7 +7,7 @@ import { createPortal } from 'react-dom';
 import { MenuModal } from './components/MenuModal';
 import { CartModal } from './components/CartModal';
 import { CarouselDesktop } from './components/CarouselDesktop';
-import styles from './app.module.scss';
+import styles from './home.module.scss';
 
 const images = [
   'image-product-1.jpg',
